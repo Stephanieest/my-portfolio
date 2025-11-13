@@ -1,0 +1,104 @@
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container for consistent width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Basic navigation styles */
+nav {
+    background: #f8f8f8;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Section basic styles */
+section {
+    padding: 4rem 0;
+}
+
+/* Hero section */
+#home {
+    background: #e8f4f8;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Skills section */
+.skills-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills-list span {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
