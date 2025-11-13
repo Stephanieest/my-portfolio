@@ -30,7 +30,7 @@ body {
     padding: 0 20px;
 }
 
-/* Basic navigation styles */
+/* Navigation Styles */
 nav {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -72,6 +72,13 @@ nav .container {
 /* Section basic styles */
 section {
     padding: 4rem 0;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
 }
 
 /* Hero section */
@@ -240,13 +247,6 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem 0;
-}
-
-/* Section title */
-.section-title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-dark);
 }
 
 /* Mobile Responsive Styles */

@@ -3,49 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephanie Njonjo - Portfolio</title>
+    <title>Stephanie Njonjo - Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">Stephanie Njonjo</div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Stephanie Njonjo</a>
+            </div>
+            
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="https://github.com/Stephanieest" 
+                       target="_blank" 
+                       class="nav-link github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
             </ul>
+            
+            <div class="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home">
         <div class="container">
-            <h1>Hi, I'm Stephanie Njonjo</h1>
-            <p>Front-End Web Developer</p>
-            <button>View My Work</button>
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Stephanie Njonjo</span></h1>
+                <p class="subtitle">Front-End Web Developer</p>
+                <p class="hero-description">Creating beautiful, responsive web experiences with modern technologies</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a Front-End Web Developer skilled in HTML, CSS, JavaScript, and React JS. I'm progressively learning JavaScript and React to build more dynamic and interactive applications.</p>
-            
-            <p>I graduated from Moringa School, where I gained hands-on experience with both Front-End and Back-End programming technologies.</p>
-            
-            <div class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li><strong>Moringa School:</strong> Software Engineering and AI Certificates</li>
-                    <li><strong>Hampton School:</strong> O-Levels: B-</li>
-                    <li><strong>Limuru International School:</strong> KCPE: 308</li>
-                </ul>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Front-End Web Developer skilled in HTML, CSS, JavaScript, and React JS. I love creating dynamic and interactive web applications that provide exceptional user experiences.</p>
+                    
+                    <p>I graduated from Moringa School, where I gained comprehensive hands-on experience with both Front-End and Back-End programming technologies, building a strong foundation in full-stack development.</p>
+                    
+                    <div class="education">
+                        <h3>Education & Certifications</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <strong>Moringa School:</strong> Software Engineering and AI Certificates
+                            </li>
+                            <li>
+                                <i class="fas fa-school"></i>
+                                <strong>Hampton School:</strong> O-Levels: B-
+                            </li>
+                            <li>
+                                <i class="fas fa-school"></i>
+                                <strong>Limuru International School:</strong> KCPE: 308
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-text">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-text">Technologies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1</span>
+                        <span class="stat-text">Year Experience</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -53,14 +106,33 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Python</span>
-                <span>Flask</span>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">React</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Git & GitHub</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">Command Line</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -69,6 +141,7 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are some of the projects I've worked on during my learning journey</p>
             
             <div class="projects-grid">
                 <!-- Project 1: Tephie's Shop -->
@@ -78,7 +151,7 @@
                         <span class="project-phase">Phase 1</span>
                     </div>
                     <p class="project-description">
-                        A full e-commerce website with product catalog, shopping cart, and user authentication.
+                        A full e-commerce website with product catalog, shopping cart, and user authentication features.
                     </p>
                     <div class="tech-tags">
                         <span class="tech">HTML</span>
@@ -89,7 +162,7 @@
                         <a href="https://github.com/Stephanieest/phase-1-final-project-shopping-app" 
                            target="_blank" 
                            class="project-link">
-                            <i class="fas fa-code"></i> View Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -101,7 +174,7 @@
                         <span class="project-phase">Phase 2</span>
                     </div>
                     <p class="project-description">
-                        Football club website with team management, player profiles, and match scheduling.
+                        Football club website with team management, player profiles, and match scheduling functionality.
                     </p>
                     <div class="tech-tags">
                         <span class="tech">HTML</span>
@@ -112,7 +185,7 @@
                         <a href="https://github.com/Stephanieest/phase-2-project" 
                            target="_blank" 
                            class="project-link">
-                            <i class="fas fa-code"></i> View Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -124,7 +197,7 @@
                         <span class="project-phase">Phase 3</span>
                     </div>
                     <p class="project-description">
-                        Command-line interface application for managing and searching recipes with CRUD operations.
+                        Command-line interface application for managing and searching recipes with full CRUD operations.
                     </p>
                     <div class="tech-tags">
                         <span class="tech">Python</span>
@@ -134,7 +207,7 @@
                         <a href="https://github.com/Stephanieest/python-p3-recipe-cli" 
                            target="_blank" 
                            class="project-link">
-                            <i class="fas fa-code"></i> View Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -146,7 +219,7 @@
                         <span class="project-phase">Phase 4</span>
                     </div>
                     <p class="project-description">
-                        Full-stack contact management application with React frontend and Flask backend.
+                        Full-stack contact management application with React frontend and Flask backend API.
                     </p>
                     <div class="tech-tags">
                         <span class="tech">React</span>
@@ -158,7 +231,7 @@
                         <a href="https://github.com/Stephanieest/contact-app-frontend" 
                            target="_blank" 
                            class="project-link">
-                            <i class="fas fa-code"></i> View Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -170,7 +243,7 @@
                         <span class="project-phase">Phase 5</span>
                     </div>
                     <p class="project-description">
-                        Interactive learning platform with flashcard functionality for efficient studying.
+                        Interactive learning platform with flashcard functionality for efficient studying and knowledge retention.
                     </p>
                     <div class="tech-tags">
                         <span class="tech">React</span>
@@ -180,7 +253,7 @@
                         <a href="https://github.com/Stephanieest/flashlearn-frontend" 
                            target="_blank" 
                            class="project-link">
-                            <i class="fas fa-code"></i> View Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -191,16 +264,79 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: stephnjonjo@gmail.com</p>
-            <p>Phone: 0732855425</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'm always open to discussing new opportunities and projects</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>stephnjonjo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>0732855425</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/Stephanieest</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Stephanie Njonjo</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Stephanie Njonjo</h3>
+                    <p>Front-End Web Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Stephanieest" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stephanie Njonjo. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
