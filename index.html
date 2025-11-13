@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie Njonjo - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -31,66 +32,23 @@
     </section>
 
     <!-- About Section -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I'm a Front-End Web Developer skilled in HTML, CSS, JavaScript, and React JS. I'm progressively learning JavaScript and React to build more dynamic and interactive applications.</p>
-        
-        <p>I graduated from Moringa School, where I gained hands-on experience with both Front-End and Back-End programming technologies.</p>
-        
-        <div class="education">
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Moringa School:</strong> Software Engineering and AI Certificates</li>
-                <li><strong>Hampton School:</strong> O-Levels: B-</li>
-                <li><strong>Limuru International School:</strong> KCPE: 308</li>
-            </ul>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a Front-End Web Developer skilled in HTML, CSS, JavaScript, and React JS. I'm progressively learning JavaScript and React to build more dynamic and interactive applications.</p>
+            
+            <p>I graduated from Moringa School, where I gained hands-on experience with both Front-End and Back-End programming technologies.</p>
+            
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Moringa School:</strong> Software Engineering and AI Certificates</li>
+                    <li><strong>Hampton School:</strong> O-Levels: B-</li>
+                    <li><strong>Limuru International School:</strong> KCPE: 308</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
-    <!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        
-        <div class="project">
-            <h3>Tephie's Shop</h3>
-            <p>Phase 1 project - E-commerce website showcasing products</p>
-            <span class="tech">HTML</span>
-            <span class="tech">CSS</span>
-            <span class="tech">JavaScript</span>
-        </div>
-        
-        <div class="project">
-            <h3>Steph-FC</h3>
-            <p>Phase 2 project - Football club website</p>
-            <span class="tech">HTML</span>
-            <span class="tech">CSS</span>
-            <span class="tech">JavaScript</span>
-        </div>
-        
-        <div class="project">
-            <h3>Recipe CLI</h3>
-            <p>Phase 3 project - Command-line recipe application</p>
-            <span class="tech">Python</span>
-        </div>
-        
-        <div class="project">
-            <h3>Contact App</h3>
-            <p>Phase 4 project - Contact management application</p>
-            <span class="tech">Python</span>
-            <span class="tech">Flask</span>
-            <span class="tech">SQLite</span>
-        </div>
-        
-        <div class="project">
-            <h3>Flashlearn</h3>
-            <p>Phase 5 project - Learning platform with flashcards</p>
-            <span class="tech">React</span>
-            <span class="tech">JavaScript</span>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills">
@@ -110,11 +68,122 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>1. Tephie's Shop</h3>
-                <p>Phase 1 project - E-commerce website</p>
-                <p></p>
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Tephie's Shop -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Tephie's Shop</h3>
+                        <span class="project-phase">Phase 1</span>
+                    </div>
+                    <p class="project-description">
+                        A full e-commerce website with product catalog, shopping cart, and user authentication.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech">HTML</span>
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Stephanieest/phase-1-final-project-shopping-app" 
+                           target="_blank" 
+                           class="project-link">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Steph-FC -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Steph-FC</h3>
+                        <span class="project-phase">Phase 2</span>
+                    </div>
+                    <p class="project-description">
+                        Football club website with team management, player profiles, and match scheduling.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech">HTML</span>
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Stephanieest/phase-2-project" 
+                           target="_blank" 
+                           class="project-link">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Recipe CLI -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Recipe CLI</h3>
+                        <span class="project-phase">Phase 3</span>
+                    </div>
+                    <p class="project-description">
+                        Command-line interface application for managing and searching recipes with CRUD operations.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech">Python</span>
+                        <span class="tech">SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Stephanieest/python-p3-recipe-cli" 
+                           target="_blank" 
+                           class="project-link">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Contact App -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Contact App</h3>
+                        <span class="project-phase">Phase 4</span>
+                    </div>
+                    <p class="project-description">
+                        Full-stack contact management application with React frontend and Flask backend.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech">React</span>
+                        <span class="tech">Python</span>
+                        <span class="tech">Flask</span>
+                        <span class="tech">SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Stephanieest/contact-app-frontend" 
+                           target="_blank" 
+                           class="project-link">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Flashlearn -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Flashlearn</h3>
+                        <span class="project-phase">Phase 5</span>
+                    </div>
+                    <p class="project-description">
+                        Interactive learning platform with flashcard functionality for efficient studying.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech">React</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Stephanieest/flashlearn-frontend" 
+                           target="_blank" 
+                           class="project-link">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
